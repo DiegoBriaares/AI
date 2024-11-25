@@ -40,9 +40,9 @@ def draw_expanding_circular_graphs(start, end):
         for k in pos:
             pos[k] = (scale_factor * pos[k][0], scale_factor * pos[k][1])
 
-        nx.draw(G, pos, with_labels=True, labels=labels, node_size=1024, arrows=True)
+        nx.draw(G, pos, with_labels=True, labels=labels, node_size=200, arrows=True)
         current_n *= 2
 
 # Drawing graphs from 33 vertices to 1024 vertices
-draw_expanding_circular_graphs(33, 256)
+draw_expanding_circular_graphs(4, 32)
 plt.show()

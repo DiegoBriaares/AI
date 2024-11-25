@@ -28,7 +28,7 @@ def calculate_3d_positions(G, layer_number):
 all_nodes = []
 all_edges = []
 
-for layer_num, num_nodes in enumerate([1, 2, 4, 8, 16, 32, 64, 128, 256], start=1):
+for layer_num, num_nodes in enumerate([4, 8, 16, 32], start=1):
     G = create_graph_layer(num_nodes)
     positions = calculate_3d_positions(G, layer_num)
 
